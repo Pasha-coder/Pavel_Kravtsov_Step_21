@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1920px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*header*/
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.headerContainer {
+    margin: 30px 255px 0 255px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.headerNav {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    font-weight: bold;
+    color: #978E82;
+}
+
+.headerName {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #2E3332;
+    text-shadow: 2px 2px white;
+}
+
+/*nav*/
+
+.navItem {
+    padding: 0 15px 0 15px;
+    text-transform: uppercase;
+}
+
+.navItem:hover {
+    color: #E5C375;
+}
+
+/*intro*/
+
+.intro {
+    width: 100%;
+    background-color: #F0E2D7;
+}
+
+.introContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.introImage {
+    width: 50%;
+    background-image: url(project/project/images/home-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.introMain {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 270px 50px;
+}
+
+.introWelcome {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #B0B1BF;
+}
+
+.introTitle {
+    margin-bottom: 25px;
+    font-size: 55px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.introText {
+    margin-bottom: 60px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #B4A39F;
+}
+
+.introButton .startButton {
+    padding: 15px 50px;
+    border-radius: 300px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 3px solid black;
+}
+
+/*aboutMe*/
+
+.about {
+    width: 100%;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutMain {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 50px 40px;
+}
+
+.aboutAdd {
+    width: 50%;
+}
+
+.aboutTitle {
+    margin-bottom: 15px;
+    font-size: 55px;
+    font-weight: 300;
+}
+
+.aboutSubtitle {
+    margin-bottom: 45px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #E5C375;
+}
+
+.aboutText {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #B4A39F;
+}
+
+.aboutSupText {
+    margin-bottom: 15px;
+}
+
+.aboutSplit {
+    width: 50%;
+    display: flex;
+    flex-direction: row
+}
+
+.aboutImage {
+    width: 50%;
+    background-image: url(/project/project/images/about-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.aboutSkill {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 50px 30px 50px 50px;
+    background-color: orange;
+    color: white;
+}
+
+/*Skill*/
+
+.skillStat {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.skillTitle {
+    font-size: 55px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.skillSubTitle {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 45px;
+}
+
+.skillStatContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.skillText {
+    color: black;
+}
+
+.skillBar {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 25px;
+}
+
+/*Service*/
+
+.service {
+    width: 100%;
+}
+
+.serviceContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.serviceItem {
+    width: 25%;
+    padding: 50px 40px 60px 40px;
+    color: white;
+}
+
+.serviceInfo {
+    text-align: center;
+}
+
+.serviceIcon {
+    font-size: 55px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.serviceTitle {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.serviceText {
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/*ServiceItem*/
+
+.design {
+    background-color: orangered;
+}
+
+.strategy {
+    background-color: red;
+}
+
+.mobile {
+    background-color: black;
+}
+
+.coding {
+    color: black;
+}
+
+/*Experience*/
+
+.experience {
+    width: 100%;
+    background-color: red;
+}
+
+.experienceContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.experienceImage {
+    width: 50%;
+    background-image: url(/project/project/images/experience-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.experienceMain {
+    width: 50%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.experienceInfo {
+    color: white;
+}
+
+.experienceTitle {
+    font-size: 55px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.experienceSubTitle {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+/*History*/
+
+.historyItem {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 20px;
+}
+
+.historyIcon {
+    font-size: 55px;
+    font-weight: 400;
+    margin-right: 20px;
+}
+
+.historyProfession {
+    font-size: 30px;
+    font-weight: 300;
+    margin-right: 5px;
+}
+
+.historyRange {
+    font-size: 19px;
+    font-weight: 400;
+    color: black;
+}
+
+.historyText {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 20px 35px;
+}
+
+/*Education*/
+
+.education {
+    width: 100%;
+    background-color: orange;
+}
+
+.educationContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.educationMain {
+    width: 50%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.educationInfo {
+    color: white;
+}
+
+.educationTitle {
+    font-size: 55px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.educationSubTitle {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.educationImage {
+    width: 50%;
+    background-image: url(/project/project/images/education-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+/*Quotes*/
+
+.quotes {
+    width: 100%;
+    background-color: black;
+}
+
+.quotesContainer {
+    text-align: center;
+    padding: 200px 400px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/project/project/images/quotes-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.quotesInfo {
+    color: white;
+}
+
+.quotesIcon {
+    font-size: 55px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.quotesTitle {
+    font-size: 55px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.quotesText {
+    font-size: 20px;
+    font-weight: 300;
+    color: lightgray;
+}
+
+/*Feedback*/
+
+.feedback {
+    width: 100%;
+}
+
+.feedbackContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.feedbackHello {
+    width: 50%;
+    padding: 50px 40px 50px 50px;
+    background-color: red;
+    color: white;
+}
+
+/*Hello*/
+
+.helloTitle {
+    font-size: 55px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.helloSubTitle {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.helloName {
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 95%;
+    padding: 13px;
+    font-size: 23px;
+    font-weight: 400;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid orange;
+    margin-bottom: 30px;
+    background-color: transparent;
+}
+
+.helloEmail {
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 95%;
+    padding: 13px;
+    font-size: 23px;
+    font-weight: 400;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid orange;
+    margin-bottom: 30px;
+    background-color: transparent;
+}
+
+::placeholder {
+    color: white;
+}
+
+.hellotext {
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 95%;
+    padding: 13px;
+    font-size: 23px;
+    font-weight: 400;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid orange;
+    margin-bottom: 30px;
+    background-color: transparent;
+    color: white;
+}
+
+.helloButton .sendButton {
+    margin-left: 20px;
+    padding: 15px 180px;
+    border-radius: 300px;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: white;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
