@@ -11,16 +11,16 @@
 /*header*/
 
 .header {
+    width: 100%;
     position: fixed;
     top: 0;
-    width: 100%;
 }
 
 .headerContainer {
-    margin: 30px 255px 0 255px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 30px 255px 0 255px;
 }
 
 .headerNav {
@@ -28,25 +28,30 @@
     flex-direction: row;
     font-size: 15px;
     font-weight: bold;
-    color: #978E82;
 }
 
 .headerName {
-    font-size: 22px;
+    color: #2E3332;
+    font-size: 25px;
     font-weight: bold;
     letter-spacing: 1px;
-    color: #2E3332;
     text-shadow: 2px 2px white;
 }
 
 /*nav*/
 
 .navItem {
+    font-size: 18px;
     padding: 0 15px 0 15px;
     text-transform: uppercase;
 }
 
-.navItem:hover {
+.navRef {
+    color: #978E82;
+    text-decoration: none;
+}
+
+.navRef:hover {
     color: #E5C375;
 }
 
@@ -66,49 +71,53 @@
 .introImage {
     width: 50%;
     background-image: url(project/project/images/home-img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .introMain {
-    box-sizing: border-box;
     width: 50%;
+    box-sizing: border-box;
     padding: 270px 50px;
 }
 
 .introWelcome {
-    margin-bottom: 25px;
-    text-transform: uppercase;
+    color: #B0B1BF;
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
-    color: #B0B1BF;
+    margin-bottom: 25px;
+    text-transform: uppercase;
 }
 
 .introTitle {
-    margin-bottom: 25px;
     font-size: 55px;
     font-weight: 300;
     line-height: 1;
+    margin-bottom: 25px;
+}
+
+.introSpan {
+    font-weight: 400;
 }
 
 .introText {
-    margin-bottom: 60px;
-    font-size: 20px;
+    color: #B4A39F;
+    font-size: 22px;
     font-weight: 300;
     line-height: 1.5;
-    color: #B4A39F;
+    margin-bottom: 60px;
 }
 
 .introButton .startButton {
-    padding: 15px 50px;
-    border-radius: 300px;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: bold;
     background-color: transparent;
     border: 3px solid black;
+    border-radius: 300px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 50px;
+    text-transform: uppercase;
 }
 
 /*aboutMe*/
@@ -123,8 +132,8 @@
 }
 
 .aboutMain {
-    box-sizing: border-box;
     width: 50%;
+    box-sizing: border-box;
     padding: 50px 40px;
 }
 
@@ -133,23 +142,24 @@
 }
 
 .aboutTitle {
-    margin-bottom: 15px;
     font-size: 55px;
     font-weight: 300;
+    margin-bottom: 15px;
 }
 
 .aboutSubtitle {
-    margin-bottom: 45px;
-    font-size: 20px;
-    font-weight: 300;
     color: #E5C375;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 45px;
+    
 }
 
 .aboutText {
-    font-size: 20px;
+    color: #B4A39F;
+    font-size: 22px;
     font-weight: 300;
     line-height: 1.5;
-    color: #B4A39F;
 }
 
 .aboutSupText {
@@ -164,18 +174,18 @@
 
 .aboutImage {
     width: 50%;
-    background-image: url(/project/project/images/about-img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(project/project/images/about-img.jpg);
     background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
+    
 .aboutSkill {
-    box-sizing: border-box;
     width: 50%;
-    padding: 50px 30px 50px 50px;
-    background-color: orange;
     color: white;
+    background-color: orange;
+    box-sizing: border-box;
+    padding: 50px 30px 50px 50px;
 }
 
 /*Skill*/
@@ -192,7 +202,7 @@
 }
 
 .skillSubTitle {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
     margin-bottom: 45px;
 }
@@ -213,6 +223,37 @@
     width: 100%;
     background-color: black;
     margin-bottom: 25px;
+    position: relative;
+}
+
+.firstBar::after {
+    display: block;
+    content: '';
+    height: 2px;
+    width: 10%;
+    background-color: white;
+    position: absolute;
+    right: 0; 
+}
+
+.secondBar::after {
+    display: block;
+    content: '';
+    height: 2px;
+    width: 30%;
+    background-color: white;
+    position: absolute;
+    right: 0; 
+}
+
+.thirdBar::after {
+    display: block;
+    content: '';
+    height: 2px;
+    width: 20%;
+    background-color: white;
+    position: absolute;
+    right: 0; 
 }
 
 /*Service*/
@@ -228,8 +269,8 @@
 
 .serviceItem {
     width: 25%;
-    padding: 50px 40px 60px 40px;
     color: white;
+    padding: 50px 40px 60px 40px;
 }
 
 .serviceInfo {
@@ -275,8 +316,8 @@
 /*Experience*/
 
 .experience {
-    width: 100%;
     background-color: red;
+    width: 100%;
 }
 
 .experienceContainer {
@@ -284,18 +325,18 @@
     flex-direction: row;
 }
 
-.experienceImage {
-    width: 50%;
-    background-image: url(/project/project/images/experience-img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+.experienceImage {  
+    width: 50%; 
+    background-image: url(project/project/images/experience-img.jpg);
     background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .experienceMain {
     width: 50%;
-    padding: 50px;
     box-sizing: border-box;
+    padding: 50px;
 }
 
 .experienceInfo {
@@ -309,7 +350,7 @@
 }
 
 .experienceSubTitle {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
     margin-bottom: 50px;
 }
@@ -336,13 +377,13 @@
 }
 
 .historyRange {
-    font-size: 19px;
-    font-weight: 400;
     color: black;
+    font-size: 19px;
+    font-weight: bold;
 }
 
 .historyText {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
     margin: 0 0 20px 35px;
 }
@@ -361,8 +402,8 @@
 
 .educationMain {
     width: 50%;
-    padding: 50px;
     box-sizing: border-box;
+    padding: 50px;
 }
 
 .educationInfo {
@@ -376,17 +417,17 @@
 }
 
 .educationSubTitle {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
     margin-bottom: 50px;
 }
 
 .educationImage {
     width: 50%;
-    background-image: url(/project/project/images/education-img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(project/project/images/education-img.jpg);
     background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*Quotes*/
@@ -397,12 +438,12 @@
 }
 
 .quotesContainer {
-    text-align: center;
-    padding: 200px 400px;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/project/project/images/quotes-bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(project/project/images/quotes-bg.jpg);
     background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 400px;
+    text-align: center;text-align: center;
 }
 
 .quotesInfo {
@@ -422,9 +463,9 @@
 }
 
 .quotesText {
-    font-size: 20px;
-    font-weight: 300;
     color: lightgray;
+    font-size: 22px;
+    font-weight: 300;
 }
 
 /*Feedback*/
@@ -440,9 +481,29 @@
 
 .feedbackHello {
     width: 50%;
-    padding: 50px 40px 50px 50px;
     background-color: red;
     color: white;
+    padding: 50px 40px 50px 50px;
+}
+
+.feedbackMain {
+    width: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.feedbackImage {
+    width: 50%;
+    background-image: url('./project/project/images/contact-img.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.feedbackContact {
+    width: 50%;
 }
 
 /*Hello*/
@@ -454,37 +515,37 @@
 }
 
 .helloSubTitle {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
     margin-bottom: 50px;
 }
 
 .helloName {
-    font-family: 'Source Sans Pro', sans-serif;
     width: 95%;
-    padding: 13px;
-    font-size: 23px;
-    font-weight: 400;
+    background-color: transparent;
     border-top: none;
     border-right: none;
     border-left: none;
     border-bottom: 1px solid orange;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
     margin-bottom: 30px;
-    background-color: transparent;
+    padding: 13px;
 }
 
 .helloEmail {
-    font-family: 'Source Sans Pro', sans-serif;
     width: 95%;
-    padding: 13px;
-    font-size: 23px;
-    font-weight: 400;
+    background-color: transparent;
     border-top: none;
     border-right: none;
     border-left: none;
     border-bottom: 1px solid orange;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
     margin-bottom: 30px;
-    background-color: transparent;
+    padding: 13px;
 }
 
 ::placeholder {
@@ -492,27 +553,101 @@
 }
 
 .hellotext {
-    font-family: 'Source Sans Pro', sans-serif;
     width: 95%;
-    padding: 13px;
-    font-size: 23px;
-    font-weight: 400;
+    background-color: transparent;
     border-top: none;
     border-right: none;
     border-left: none;
     border-bottom: 1px solid orange;
-    margin-bottom: 30px;
-    background-color: transparent;
     color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 23px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    padding: 13px;
 }
 
 .helloButton .sendButton {
-    margin-left: 20px;
-    padding: 15px 180px;
-    border-radius: 300px;
-    font-size: 20px;
-    font-weight: 300;
     background-color: white;
     border: none;
+    border-radius: 300px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 20px;
+    padding: 15px 170px;
+}
+
+/*Contact*/
+.contactInfo {
+    padding: 50px 40px 50px 50px;
+}
+
+.contactTitle {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.contactAddress {
+    color: grey;
+    font-size: 21px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.contactPhone {
+    color: grey;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.contactMail {
+    color: orange;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.contactSite {
+    color: orange;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+/*Footer*/
+.footer {
+    width: 100%;
+}
+
+.footerContainer {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.footerInfo {
+    color: grey;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.footerText {
+    margin-bottom: 30px;
+}
+
+.footerSpan {
+    color: orange;
+}
+
+.footerMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footerIcon {
+    padding: 25px;
+    font-weight: bold;
 }

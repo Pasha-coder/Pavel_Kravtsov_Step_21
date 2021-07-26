@@ -14,22 +14,22 @@
             <div class="headerContainer">
                 <div class="headerName">Stimulus</div>
                 <div class="headerNav">
-                    <div class="navItem">Home</div>
-                    <div class="navItem">About me</div>
-                    <div class="navItem">Experiences</div>
-                    <div class="navItem">Testimonial</div>
-                    <div class="navItem">Contact</div>
+                    <div class="navItem"><a class="navRef" href="#intro">Home</a></div>
+                    <div class="navItem"><a class="navRef" href="#about">About me</a></div>
+                    <div class="navItem"><a class="navRef" href="#experience">Experiences</a></div>
+                    <div class="navItem"><a class="navRef" href="#education">Testimonial</a></div>
+                    <div class="navItem"><a class="navRef" href="#feedback">Contact</a></div>
                 </div><!--headerNav-->
             </div><!--headerContainer-->
         </div><!--header-->
 
-        <div class="intro">
+        <div id="intro" class="intro">
             <div class="introContainer">
                 <div class="introImage"></div>
                 <div class="introMain">
                     <div class="introInfo">
                         <div class="introWelcome">Welcome to my website</div>
-                        <div class="introTitle">Hello, I am Stimulus currently based in New York city.</div>
+                        <div class="introTitle">Hello, I am <span class="introSpan">Stimulus</span> currently based in New York city.</div>
                         <div class="introText">Donec auctor arcu at efficitur lacinia. Praesent bibendum efficitur ipsum, et mattis tellus interdum in. Ut a dictum
                         purus. Vebstibulum non pellentesque felis, sed dignissim urna. Vestibulum id accumsan quam.</div>
                         <div class="introButton"><button class="startButton" type="submit">Get started</button></div>
@@ -38,7 +38,7 @@
             </div><!--introContainer-->
         </div><!--intro-->
 
-        <div class="about">
+        <div id="about" class="about">
             <div class="aboutContainer">
                 <div class="aboutMain">
                     <div class="aboutInfo">
@@ -63,17 +63,17 @@
                                     <div class="skillText">Frontend Design</div>
                                     <div class="skillPercent">90%</div>
                                 </div><!--skillsStatContainer-->
-                                <div class="skillBar"></div>
+                                <div class="skillBar firstBar"></div>
                                 <div class="skillStatContainer">
                                     <div class="skillText">Backend Processing</div>
                                     <div class="skillPercent">70%</div>
                                 </div><!--skillsStatContainer-->
-                                <div class="skillBar"></div>
+                                <div class="skillBar secondBar"></div>
                                 <div class="skillStatContainer">
                                     <div class="skillText">HTML5 & CSS3</div>
                                     <div class="skillPercent">80%</div>
                                 </div><!--skillsStatContainer-->
-                                <div class="skillBar"></div>
+                                <div class="skillBar thirdBar"></div>
                             </div><!--skillsItem-->
                         </div><!--skillsInfo-->
                     </div><!--aboutSkills-->
@@ -114,7 +114,7 @@
             </div><!--serviceContainer-->
         </div><!--service-->
 
-        <div class="experience">
+        <div id="experience" class="experience">
             <div class="experienceContainer">
                 <div class="experienceImage"></div>
                 <div class="experienceMain">
@@ -140,7 +140,7 @@
             </div><!--experienceContainer-->
         </div><!--experience-->
 
-        <div class="education">
+        <div id="education" class="education">
             <div class="educationContainer">
                 <div class="educationMain">
                     <div class="educationInfo">
@@ -177,7 +177,7 @@
             </div><!--quotesContainer-->
         </div><!--quotes-->
 
-        <div class="feedback">
+        <div id="feedback" class="feedback">
             <div class="feedbackContainer">
                 <div class="feedbackHello">
                     <div class="helloInfo">
@@ -212,6 +212,21 @@
                 </div><!--feedbackMain-->
             </div><!--feedbackContainer-->
         </div><!--feedback-->
+
+        <div class="footer">
+            <div class="footerContainer">
+                <div class="footerInfo">
+                    <div class="footerText">Copyright © 2016 Your Company | Design: <span class="footerSpan">templatemo</span></div>
+                    <div class="footerMedia">
+                        <div class="footerIcon">!</div>
+                        <div class="footerIcon">!</div>
+                        <div class="footerIcon">!</div>
+                        <div class="footerIcon">!</div>
+                        <div class="footerIcon">!</div>
+                    </div><!--footerMedia-->
+                </div><!--footerInfo-->
+            </div><!--footerContainer-->
+        </div><!--footer-->
 
     </div><!--wrapper-->
 </body>
