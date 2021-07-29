@@ -361,11 +361,11 @@
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    margin-bottom: 20px;
 }
 
 .historyIcon {
-    font-size: 55px;
+    align-self: center;
+    font-size: 45px;
     font-weight: 400;
     margin-right: 20px;
 }
@@ -385,7 +385,7 @@
 .historyText {
     font-size: 22px;
     font-weight: 300;
-    margin: 0 0 20px 35px;
+    margin: 0 0 20px 78px;
 }
 
 /*Education*/
@@ -648,6 +648,6 @@
 }
 
 .footerIcon {
-    padding: 25px;
+    padding: 30px;
     font-weight: bold;
 }
