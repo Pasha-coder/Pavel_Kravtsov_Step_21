@@ -1,4 +1,4 @@
 const digitOfPi = 3.14;
 let circleRadius = +prompt('Введите радиус окружности');
 
-alert(`${digitOfPi * circleRadius ** 2}`);
+alert(`Площадь  окружности равна ${digitOfPi * circleRadius ** 2}`);
