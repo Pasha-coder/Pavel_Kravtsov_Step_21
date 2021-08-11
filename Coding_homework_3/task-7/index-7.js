@@ -8,7 +8,7 @@ if (shift === 0) {
     alert(num);
 } else {
     while (i < shift) {
-        sub = sub + num.substring(i, i + 1);
+        sub += num.substring(i, i + 1);
         i++;
     }
     left = num.substring(shift, num.length);
