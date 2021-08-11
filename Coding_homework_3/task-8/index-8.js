@@ -4,25 +4,25 @@ let newDay;
 if (day >= 1 && day <= 7) {
     switch (day) {
         case 1:
-            day = 'Понедельник';
+            day = 'понедельник';
             break;
         case 2:
-            day = 'Вторник';
+            day = 'вторник';
             break;
         case 3:
-            day = 'Среда';
+            day = 'среда';
             break;
         case 4:
-            day = 'Четверг';
+            day = 'четверг';
             break;
         case 5:
-            day = 'Пятница';
+            day = 'пятница';
             break;
         case 6:
-            day = 'Суббота';
+            day = 'суббота';
             break;
         case 7:
-            day = 'Воскресенье';
+            day = 'воскресенье';
             break;
     };
 } else {
@@ -33,26 +33,26 @@ while (newDay !== false) {
     newDay = confirm(`День недели - ${day}. Хотите увидеть следующий день?`);
 
     switch (day) {
-        case 'Понедельник':
-            day = 'Вторник';
+        case 'понедельник':
+            day = 'вторник';
             break;
-        case 'Вторник':
-            day = 'Среда';
+        case 'вторник':
+            day = 'среда';
             break;
-        case 'Среда':
-            day = 'Четверг';
+        case 'среда':
+            day = 'четверг';
             break;
-        case 'Четверг':
-            day = 'Пятница';
+        case 'четверг':
+            day = 'пятница';
             break;
-        case 'Пятница':
-            day = 'Суббота';
+        case 'пятница':
+            day = 'суббота';
             break;
-        case 'Суббота':
-            day = 'Воскресенье';
+        case 'суббота':
+            day = 'воскресенье';
             break;
-        case 'Воскресенье':
-            day = 'Понедельник';
+        case 'воскресенье':
+            day = 'понедельник';
             break;
     };
 };
