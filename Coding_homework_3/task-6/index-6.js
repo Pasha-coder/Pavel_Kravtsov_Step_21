@@ -17,9 +17,9 @@ switch (act) {
         break;
 };
 
-let question = prompt('Хотите решить ещё один пример?');
+let question = confirm('Хотите решить ещё один пример?');
 
-while (question !== null) {
+while (question !== false) {
     let firstNum = +prompt('Введите число');
     let secondNum = +prompt('Введите число');
     let act = prompt('Введите знак арифметического действия');
@@ -39,6 +39,5 @@ while (question !== null) {
             break;
     };
 
-    question = prompt('Хотите решить ещё один пример?');
-    
+    question = confirm('Хотите решить ещё один пример?');
 };

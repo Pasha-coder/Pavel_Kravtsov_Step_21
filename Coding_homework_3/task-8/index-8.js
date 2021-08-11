@@ -1,5 +1,5 @@
 let day = +prompt('Введите число от 1 до 7');
-let newDay = ' ';
+let newDay;
 
 if (day >= 1 && day <= 7) {
     switch (day) {
