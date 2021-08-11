@@ -1,5 +1,5 @@
 let day = +prompt('Введите число от 1 до 7');
-let newDay = '';
+let newDay = ' ';
 
 if (day >= 1 && day <= 7) {
     switch (day) {
@@ -29,8 +29,8 @@ if (day >= 1 && day <= 7) {
     alert('Ошибка');
 };
 
-while (newDay !== null) {
-    newDay = prompt(`День недели - ${day}. Хотите увидеть следующий день?`);
+while (newDay !== false) {
+    newDay = confirm(`День недели - ${day}. Хотите увидеть следующий день?`);
 
     switch (day) {
         case 'Понедельник':
