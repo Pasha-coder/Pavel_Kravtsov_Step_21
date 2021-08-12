@@ -5,11 +5,11 @@ function evenOrOdd(num1, num2, bool) {
     let odd = '';
     while (start <= end) {
         if (start % 2 === 0) {
-            even += start + ', ';
+            even += start + ' ';
             start++;
         };
         if (start % 2 !== 0) {
-            odd += start + ', ';
+            odd += start + ' ';
             start++;
         };
     };
