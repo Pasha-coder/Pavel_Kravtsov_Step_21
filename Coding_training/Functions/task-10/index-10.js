@@ -12,7 +12,7 @@ function isLeap(day, month, year) {
             return `1.${month++}.${year}`;
         };
     };
-} 
+};
 
 function nextDay(day, month, year) {
     if (day === 31 && month === 12) {
@@ -33,6 +33,6 @@ function nextDay(day, month, year) {
     } else if (month === 2) {
         isLeap(day, month, year);
     };
-}
+};
 
 console.log(nextDay(31, 12, 2020));
