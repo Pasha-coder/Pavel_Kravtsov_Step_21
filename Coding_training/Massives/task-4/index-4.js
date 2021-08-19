@@ -1,10 +1,13 @@
-function isPrimitive (num) {
-    for (let divider = 2; divider < num; divider++) {
-        if (num % divider === 0) {
-            return 'Число не простое';
-        };     
+let arr = [75, 88, 36, 94, 32, 82, 71, 16, 22, 57];
+let greatest = 0;
+
+function theGreatest(array) {
+    for (let i = 0; i < array.length; i++) {
+        if (greatest < array[i]) {
+            greatest = array[i];
+        };
     };
-    return 'Число простое';
+    return greatest;
 };
 
-console.log (isPrimitive(2));
+console.log(theGreatest(arr));
