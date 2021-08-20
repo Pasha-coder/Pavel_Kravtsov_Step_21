@@ -3,4 +3,4 @@ function unite(num1, num2, num3) {
    return res;
 }
 
-console.log(unite(7, 8, 3));
+console.log(unite(8, 0, 2));
