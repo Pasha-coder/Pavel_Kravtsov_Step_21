@@ -10,7 +10,7 @@ function showInfo(object) {
 };
 
 function howLong(object, distance) {
-    let time = distance / object.averageSpeed;
+    let time = Math.ceil(distance / object.averageSpeed);
     let stop = 4;
     let count = 0;
     while(time - stop > 0) {
