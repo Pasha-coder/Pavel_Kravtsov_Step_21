@@ -12,4 +12,3 @@ function isHereSpam(string) {
     return foundSpam;
 };
 
-console.log(isHereSpam(' мамай клянус уВЕлИЧение ПРОдаж!!!'));
