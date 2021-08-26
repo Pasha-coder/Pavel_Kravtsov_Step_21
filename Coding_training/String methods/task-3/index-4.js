@@ -12,4 +12,4 @@ function isHereSpam(string) {
     return foundSpam;
 };
 
-console.log(isHereSpam(' мамай клянус уВЕлИЧение ПРОдаЖ!!!'));
+console.log(isHereSpam(' мамай клянус уВЕлИЧение ПРОдаж!!!'));
