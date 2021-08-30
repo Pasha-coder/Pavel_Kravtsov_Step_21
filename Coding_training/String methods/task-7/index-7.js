@@ -8,4 +8,4 @@ function countWords(string) {
     return count;
 };
 
-console.log(countWords('Максим, я хочу кушать!'));
+console.log(countWords('Максим9,  я хочу кушать!'));
