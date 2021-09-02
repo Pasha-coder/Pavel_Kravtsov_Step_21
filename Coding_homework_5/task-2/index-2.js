@@ -1,20 +1,120 @@
-let denominator1 = 5;
-let denominator2 = 2;
-let numerator1 = 2;
-let numeartor2 = 1;
+let fraction = {
+    numerator: 4542,
+    denominator: 47,
+};
 
+function fractionAdd(num1, num2) {
+    let object = {
+        numerator: num1,
+        denominator: num2,
+    };
 
-let greatest = denominator1 > denominator2 ? denominator1 : denominator2;
-let least = denominator1 < denominator2 ? denominator1 : denominator2;
-let divider = greatest;
+    let divider = fraction.denominator > object.denominator ? fraction.denominator : object.denominator;
+    let finalNumerator;
+    let finalDenominator;
 
-function division(greatest, least) {
-    while (divider <= greatest * least) {
-        if (divider % greatest === 0 && divider % least === 0) {
-            return divider;
+    while (divider <= fraction.denominator * object.denominator) {
+        if (divider % fraction.denominator === 0 && divider % object.denominator === 0) {
+            finalDenominator = divider;
+            break;
         };
         divider++;
     };
+
+    finalNumerator = (finalDenominator / fraction.denominator * fraction.numerator) + (finalDenominator / object.denominator * object.numerator);
+
+    fraction.numerator = finalNumerator;
+    fraction.denominator = finalDenominator;
+
+    return String(fraction.numerator) + '/' + fraction.denominator;
 };
 
-console.log(division(greatest, least))
+function fractionSub(num1, num2) {
+      let object = {
+        numerator: num1,
+        denominator: num2,
+    };
+
+    let divider = fraction.denominator > object.denominator ? fraction.denominator : object.denominator;
+    let finalNumerator;
+    let finalDenominator;
+
+    while (divider <= fraction.denominator * object.denominator) {
+        if (divider % fraction.denominator === 0 && divider % object.denominator === 0) {
+            finalDenominator = divider;
+            break;
+        };
+        divider++;
+    };
+
+    finalNumerator = (finalDenominator / fraction.denominator * fraction.numerator) - (finalDenominator / object.denominator * object.numerator);
+
+    fraction.numerator = finalNumerator;
+    fraction.denominator = finalDenominator;
+
+    return String(fraction.numerator) + '/' + fraction.denominator;
+}
+
+function fractionMulti(num1, num2) {
+    let object = {
+        numerator: num1,
+        denominator: num2,
+    };
+
+    let finalNumerator;
+    let finalDenominator;
+
+    finalNumerator = fraction.numerator * object.numerator;
+    finalDenominator = fraction.denominator * object.denominator;
+
+    fraction.numerator = finalNumerator;
+    fraction.denominator = finalDenominator;
+
+    return String(fraction.numerator) + '/' + fraction.denominator;
+};
+
+function fractionDiv(num1, num2) {
+    let object = {
+        numerator: num1,
+        denominator: num2,
+    };
+
+    let finalNumerator;
+    let finalDenominator;
+
+    finalNumerator = fraction.numerator * object.denominator;
+    finalDenominator = fraction.denominator * object.numerator;
+
+    fraction.numerator = finalNumerator;
+    fraction.denominator = finalDenominator;
+
+    return String(fraction.numerator) + '/' + fraction.denominator;
+};
+
+function fractionReduction(numerator, denominator) {
+    for (let least = Math.abs(numerator) < denominator ? Math.abs(numerator) : denominator; least >= 1; least--) {
+        if (numerator % least === 0 && denominator % least === 0) {
+            fraction.numerator = numerator / least;
+            fraction.denominator = denominator / least;
+            break;
+        };
+    };
+
+    return String(fraction.numerator) + '/' + String(fraction.denominator);
+};
+
+function fractionCorrector(numerator, denominator) {
+    let whole;
+    let finalNumerator;
+    let finalDenominator;
+
+    whole = Math.floor(numerator / denominator);
+    finalNumerator = (numerator - whole * denominator);
+    finalDenominator = denominator;
+
+    return String(whole) + ' ' + finalNumerator + ' ' + finalDenominator;
+};
+
+
+
+
