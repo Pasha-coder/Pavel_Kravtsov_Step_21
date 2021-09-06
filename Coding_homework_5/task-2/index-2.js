@@ -1,6 +1,6 @@
 let fraction = {
-    numerator: 4542,
-    denominator: 47,
+    numerator: -15,
+    denominator: 5,
 };
 
 function fractionAdd(num1, num2) {
@@ -92,7 +92,7 @@ function fractionDiv(num1, num2) {
 };
 
 function fractionReduction(numerator, denominator) {
-    for (let least = Math.abs(numerator) < denominator ? Math.abs(numerator) : denominator; least >= 1; least--) {
+    for (let least = Math.abs(numerator) < Math.abs(denominator) ? Math.abs(numerator) : Math.abs(denominator); least >= 1; least--) {
         if (numerator % least === 0 && denominator % least === 0) {
             fraction.numerator = numerator / least;
             fraction.denominator = denominator / least;
@@ -114,7 +114,5 @@ function fractionCorrector(numerator, denominator) {
 
     return String(whole) + ' ' + finalNumerator + ' ' + finalDenominator;
 };
-
-
 
 
