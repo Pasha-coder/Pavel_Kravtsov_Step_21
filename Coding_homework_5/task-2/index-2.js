@@ -103,7 +103,7 @@ function fractionReduction(numerator, denominator) {
     return String(fraction.numerator) + '/' + String(fraction.denominator);
 };
 
-function fractionCorrector(numerator, denominator) {
+/* function fractionCorrector(numerator, denominator) {
     let whole;
     let finalNumerator;
     let finalDenominator;
@@ -113,6 +113,6 @@ function fractionCorrector(numerator, denominator) {
     finalDenominator = denominator;
 
     return String(whole) + ' ' + finalNumerator + ' ' + finalDenominator;
-};
+};*/
 
 

@@ -1,30 +1,16 @@
 let time = {
     hours: 23,
     minutes: 59,
-    seconds: 0,
+    seconds: 59,
 }
 
 function showTime() {
-    console.log(`${time.hours} hours, ${time.minutes} minutes, ${time.seconds} seconds`);
+    return `${time.hours} hours, ${time.minutes} minutes, ${time.seconds} seconds`;
 }
 
 function addSeconds(seconds) {
-    if (time.seconds === 0 && seconds === 60) {
-        time.seconds = 0;
-        time.minutes++;
-        if (time.minutes === 60) {
-            time.minutes = 0;
-            time.hours++;
-            if (time.hours === 24) {
-                time.hours = 0;
-            };
-        };
-        return showTime();
-    } else {
-    let count = 0;
-    for (let i = 0; i < 60; i++) {
+    for (let i = 0; i < seconds; i++) {
         time.seconds += 1;
-        count++;
         if (time.seconds === 60) {
             time.seconds = 0;
             time.minutes++;
@@ -35,65 +21,36 @@ function addSeconds(seconds) {
                     time.hours = 0;
                 };
             };
-            break;
         };
     };
 
-    time.seconds += seconds - count; 
-       
     return showTime();
-    };
 };
 
 function addMinutes(minutes) {
-    if (time.minutes === 0 && minutes === 60) {
-        time.minutes = 0;
-        time.hours++;
-        if (time.hours === 24) {
-            time.hours = 0;
-        };
-        return showTime();
-    } else {
-        let count = 0;
-        for (let i = 0; i < 60; i++) {
-            time.minutes += 1;
-            count++;
-            if (time.minutes === 60) {
-                time.minutes = 0;
-                time.hours++;
-                if (time.hours === 24) {
-                    time.hours = 0;
-                };
+    for (let i = 0; i < minutes; i++) {
+        time.minutes += 1;
+        if (time.minutes === 60) {
+            time.minutes = 0;
+            time.hours++;
+            if (time.hours === 24) {
+                time.hours = 0;
             };
-            break;
         };
-
-        time.minutes += minutes - count; 
-        
-        return showTime();
     };
+
+    return showTime();
 };
 
 function addHours(hours) {
-    if (time.hours === 0 && hours === 24) {
-        time.hours = 0;
-        return showTime();
-    } else {  
-        let count = 0;
-        for (let i = 0; i < 24; i++) {
-            time.hours += 1;
-            count++;
-            if (time.hours === 24) {
-                time.hours = 0; 
-            };
-            break;
+    for (let i = 0; i < hours; i++) {
+        time.hours += 1;
+        if (time.hours === 24) {
+            time.hours = 0;
         };
-        
-        time.hours += hours - count; 
-        
-        return showTime();
     };
+
+    return showTime();
 };
 
-console.log(addSeconds(60));
-
+console.log(addSeconds(3));
