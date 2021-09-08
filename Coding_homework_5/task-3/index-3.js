@@ -53,5 +53,5 @@ function addHours(hours) {
     return showTime();
 };
 
-console.log(addHours(24))
+
 
