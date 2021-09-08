@@ -1,5 +1,5 @@
 let time = {
-    hours: 23,
+    hours: 0,
     minutes: 59,
     seconds: 59,
 }
@@ -53,4 +53,5 @@ function addHours(hours) {
     return showTime();
 };
 
+console.log(addHours(24))
 
