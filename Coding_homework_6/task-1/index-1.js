@@ -12,12 +12,11 @@ function showShoppingList(array) {
             return 1;
         };
     };
-    return array.sort(sortPurchases);
+    array.sort(sortPurchases);
 };
 
 function addPurchase(array, name, number) {
-    let search = array.find(item => item.product === name);
-    if (search === undefined) {
+    if (array.find(item => item.product === name) === undefined) {
         array.push({product: name, quantity: number, isBought: false});
     } else {
         for (let i = 0; i < array.length; i++) {
