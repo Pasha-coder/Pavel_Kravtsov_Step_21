@@ -29,7 +29,7 @@ function giveStringInfo(string) {
             symbolCount++;
         };
     };
-    return `There are ${lettersCount} letters, ${digitsCount} digits and ${(symbolCount - (lettersCount + digitsCount)) / 2} other symbols in your string`
+    return `There are ${lettersCount} letters, ${digitsCount} digits and ${(symbolCount - (lettersCount + digitsCount)) / 2} other symbols in your string`;
 }; 
 
 
