@@ -5,6 +5,7 @@ function giveStringInfo(string) {
     let lettersCount = 0;
     let digitsCount = 0;
     let symbolCount = 0;
+    let spaceCount = 0;
     for(let i = 0; i < array.length; i++) {
         for(let n = 0; n < letters.length; n++) {
             if (array[i] === letters[n]) {
@@ -29,8 +30,14 @@ function giveStringInfo(string) {
             symbolCount++;
         };
     };
-    return `There are ${lettersCount} letters, ${digitsCount} digits and ${(symbolCount - (lettersCount + digitsCount)) / 2} other symbols in your string`;
-}; 
+    for (let i = 0; i < array.length; i++) {
+        if(array[i] === ' ') {
+            spaceCount++;
+        };
+    };
+    return `There are ${lettersCount} letters, ${digitsCount} digits and ${(symbolCount - (lettersCount + digitsCount)) / 2 - spaceCount} other symbols in your string`;
+};
 
-
+let stringStat = giveStringInfo('#ILoveRock-n-Roll!!!');
+console.log(stringStat);
 
