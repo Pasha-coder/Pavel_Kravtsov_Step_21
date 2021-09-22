@@ -38,6 +38,3 @@ function giveStringInfo(string) {
     return `There are ${lettersCount} letters, ${digitsCount} digits and ${(symbolCount - (lettersCount + digitsCount)) / 2 - spaceCount} other symbols in your string`;
 };
 
-let stringStat = giveStringInfo('#ILoveRock-n-Roll!!!');
-console.log(stringStat);
-
