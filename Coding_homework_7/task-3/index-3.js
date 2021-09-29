@@ -19,7 +19,4 @@ function modifyString(string) {
     };
 
     return array.join('');
-}
-
-let a = modifyString('3дрАвстВуй, дЯдЯ228!');
-console.log(a);
+};
