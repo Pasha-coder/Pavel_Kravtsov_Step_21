@@ -11,5 +11,3 @@ function transformToCamelCase(string) {
     return array.join('');
 };
 
-let a = transformToCamelCase('background-color');
-console.log(a);
